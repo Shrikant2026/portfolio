@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Shrikant | Web Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">Shrikant</div>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Building scalable systems</h1>
+      <p>
+        Backend architecture, real-time communication,
+        and production-ready web applications.
+      </p>
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <canvas id="infinityCanvas"></canvas>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+
+      <p class="about-text">
+        Backend developer with 3+ years of experience building scalable web 
+        applications and real-time systems. Specialized in PHP, CodeIgniter, 
+        Node.js, MySQL, and Redis. Experienced in REST APIs, WebSockets, 
+        background processing, and performance optimization.
+      </p>
+
+      <div class="about-highlights">
+        <div>⚡ 3+ Years Experience</div>
+        <div>🚀 Scalable Backend Systems</div>
+        <div>🔴 Real-time Applications</div>
+        <div>📊 Database Optimization</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <div class="experience-card">
+        <h3>Web Developer</h3>
+        <p class="company">Mind2Web LLP</p>
+        <span class="date">Nov 2023 — Present</span>
+
+        <ul>
+          <li>Developed scalable backend applications using PHP & CodeIgniter</li>
+          <li>Built real-time chat systems using Node.js & WebSockets</li>
+          <li>Optimized MySQL queries and indexing</li>
+          <li>Implemented Redis caching</li>
+          <li>Created cron-based background jobs</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
+        <h3>Web Developer Trainee</h3>
+        <p class="company">Mind2Web LLP</p>
+        <span class="date">Nov 2022 — Nov 2023</span>
+
+        <ul>
+          <li>Built REST APIs using PHP & CodeIgniter</li>
+          <li>Worked with MySQL databases</li>
+          <li>Implemented backend modules</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+        <h2>Technologies I’ve Worked With</h2>
+
+        <div class="skills-marquee">
+        <div class="skills-track" id="skillsTrack"></div>
+        </div>
+    </div>
+    </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>Invoice Builder SaaS</h3>
+          <p>Multi-tenant SaaS application for invoice management</p>
+
+          <ul class="project-features">
+            <li>🔐 Authentication & subscriptions</li>
+            <li>📊 Client management</li>
+            <li>📄 Professional invoice generation</li>
+            <li>⚡ Scalable backend architecture</li>
+          </ul>
+
+          <a href="https://invoice-saas-production-cd1e.up.railway.app"
+            target="_blank"
+            class="btn primary">
+            Visit Project
+          </a>
+        </div>
+
+
+        <div class="project-card">
+          <h3>Realtime Chat Platform</h3>
+          <p>Real-time communication platform using WebSockets</p>
+
+          <ul class="project-features">
+            <li>💬 Live rooms</li>
+            <li>🔐 Auth & sessions</li>
+            <li>⚡ Real-time messaging</li>
+            <li>🚀 Scalable architecture</li>
+          </ul>
+
+          <a href="https://realtime-chat-production-dc1e.up.railway.app"
+            target="_blank"
+            class="btn primary">
+            Visit Project
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+
+    <h2>Contact</h2>
+
+    <div class="contact-links">
+      <a href="mailto:infinity26032000@gmail.com">Email</a>
+      <a href="#">Github</a>
+      <a href="#">LinkedIn</a>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- THREE -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
