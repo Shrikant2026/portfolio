@@ -7,7 +7,8 @@
   <title>Shrikant | Web Developer</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="shortcut icon" href="assets/icons/favicon.svg">
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,8 +26,14 @@
   <!-- NAV -->
   <nav class="navbar">
     <div class="logo">Shrikant</div>
-    <div class="links">
+
+    <div class="menu-toggle" id="menuToggle">
+    ☰
+    </div>
+
+    <div class="links" id="navLinks">
       <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
@@ -35,21 +42,52 @@
 
   <!-- HERO -->
   <section id="home" class="hero">
+
     <div class="hero-text">
-      <h1>Building scalable systems</h1>
-      <p>
-        Backend architecture, real-time communication,
-        and production-ready web applications.
-      </p>
+
+      <span class="badge">Open to Work • Backend Developer • 3+ Years</span>
+
+      <h1>
+        Shrikant Rawat <br>
+        <h2 class="hero-role">
+        Backend Engineer | Scalable Systems | Real-time Applications
+        </h2>
+      </h1>
+
+      <div class="hero-meta">
+        <span>📍 Lucknow, India</span>
+        <span>🌍 Open to Remote</span>
+      </div>
+
+      <div class="hero-tech">
+
+        <span>PHP</span>
+        <span>CodeIgniter</span>
+        <span>Node.js</span>
+        <span>MySQL</span>
+        <span>Redis</span>
+        <span>WebSockets</span>
+        <span>Docker</span>
+        <span>OAuth</span>
+        <span>JWT</span>
+        <span>Rate Limiting</span>
+        <span>Load Balancing</span>
+        <span>REST APIs</span>
+
+      </div>
+
       <div class="buttons">
         <a href="#projects" class="btn primary">View Projects</a>
         <a href="#contact" class="btn">Contact</a>
+        <a href="assets/ShrikantRawatResume.pdf" class="btn">Resume</a>
       </div>
+
     </div>
 
     <div class="hero-visual">
       <canvas id="infinityCanvas"></canvas>
     </div>
+
   </section>
 
   <section id="about" class="section">
@@ -80,7 +118,7 @@
       <div class="experience-card">
         <h3>Web Developer</h3>
         <p class="company">Mind2Web LLP</p>
-        <span class="date">Nov 2023 — Present</span>
+        <span class="date">Nov 2023 — Feb 2026</span>
 
         <ul>
           <li>Developed scalable backend applications using PHP & CodeIgniter</li>
@@ -140,6 +178,7 @@
             class="btn primary">
             Visit Project
           </a>
+          <a href="https://github.com/Shrikant2026/invoice-saas" target="_blank" class="btn">GitHub</a>
         </div>
 
 
@@ -165,6 +204,50 @@
     </div>
   </section>
 
+  <section id="playground" class="section">
+    <div class="container">
+
+      <div class="construction-banner">
+        <div class="construction-bar"></div>
+        <div class="construction-text">
+          Interactive Dino Game is under construction. More features coming soon.
+        </div>
+      </div>
+
+      <h2>Interactive Playground</h2>
+      <p class="playground-sub">
+        Take a break and play the Dino game. Your high score will be saved globally.
+      </p>
+
+      <div class="game-wrapper">
+
+        <div class="game-left">
+
+          <div class="game-user">
+            <input type="text" id="playerName" placeholder="Enter your name">
+            <button id="startGame" class="btn primary">Start Game</button>
+          </div>
+
+          <canvas id="dinoGame"></canvas>
+
+          <div class="game-score">
+            Score: <span id="score">0</span>
+          </div>
+
+        </div>
+
+        <div class="leaderboard">
+
+          <h3>Leaderboard</h3>
+          <ul id="leaderboardList"></ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
@@ -173,8 +256,8 @@
 
     <div class="contact-links">
       <a href="mailto:infinity26032000@gmail.com">Email</a>
-      <a href="#">Github</a>
-      <a href="#">LinkedIn</a>
+      <a href="https://github.com/Shrikant2026">Github</a>
+      <a href="www.linkedin.com/in/shrikant-rawat-7a2628222">LinkedIn</a>
     </div>
 
     </div>
@@ -185,5 +268,13 @@
 
   <!-- JS -->
   <script src="js/main.js"></script>
+  <script src="js/dino.js"></script>
 </body>
+<footer class="footer">
+  <div class="container">
+
+    <p>© 2026 Shrikant Rawat</p>
+
+  </div>
+</footer>
 </html>
